@@ -73,7 +73,15 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+    .container__texto{
+        display: block;
+    }
+
     .container__titulo,
     .container__titulo-negrito{
         font-family: var(--fonte-secundaria);
@@ -114,5 +122,26 @@
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--preto);
+    }
+
+    .container__link:hover{
+        color: var(--laranja);
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
     }
 }
